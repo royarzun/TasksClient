@@ -1,0 +1,66 @@
+{
+  "name": "Tasks Client",
+  "version": "1.0.0-alpha",
+  "main": "public/main.js",
+  "private": true,
+  "dependencies": {
+    "electron-is-dev": "^0.3.0",
+    "lodash": "^4.17.4",
+    "material-ui": "^0.20.0",
+    "moment": "^2.20.1",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-redux": "5.0.6",
+    "react-scripts": "1.1.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "preelectron-pack": "yarn build",
+    "electron-start": "electron .",
+    "electron-pack": "build public/electron.js",
+    "electron-dev": "concurrently \"ENV=localhost BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "presets": [
+    "env",
+    "react"
+  ],
+  "jest": {
+    "setupTestFrameworkScriptFile": "./src/setupTests.js"
+  },
+  "build": {
+    "appId": "com.github.royarzun",
+    "asar": false,
+    "files": [
+      "public/main.js",
+      "**/*",
+      "dist/*",
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-react": "^7.0.0-beta.38",
+    "babel-jest": "20.0.3",
+    "babel-preset-env": "1.6.1",
+    "chai": "4.1.2",
+    "concurrently": "3.5.1",
+    "devtron": "^1.4.0",
+    "electron": "^1.7.11",
+    "electron-builder": "19.55.2",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.2.0",
+    "wait-on": "^2.1.0"
+  }
+}

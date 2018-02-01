@@ -1,0 +1,55 @@
+
+a {
+    text-decoration: none!important;
+    color: #263238;
+}
+
+.tasks-container {
+    height: calc(100% - 65px);
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.541176);
+    overflow-y: scroll;
+}
+
+.task-wrapper {
+    border-radius: 15px !important;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    padding: 1px 10px 10px 10px;
+    margin: 10px;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.task-p-error {
+    text-align: justify;
+    color: darkred;
+}
+
+.task-creation-date {
+    font-size: 10px;
+    margin-bottom: 3px;
+    color: #78909C;
+}
+
+.task-creation-date-high-priority {
+    font-size: 10px;
+    margin-bottom: 3px;
+    color: #263238;
+}
+
+.high-priority {
+    background: #FF4E50;
+    background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+    background: linear-gradient(to right, #F9D423, #FF4E50);
+}
+
+
+.fadeout {
+    position: relative;
+    bottom: 0;
+    height: 5px;
+}

@@ -1,0 +1,23 @@
+
+#root {
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background: white;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+}
+
+.title-toolbar {
+  padding: 20px;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
